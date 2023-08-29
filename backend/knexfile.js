@@ -1,5 +1,5 @@
 // Update with your config settings.
-const path = require("path")("development")
+const path = require("path")
 require("dotenv").config();
 const { DATABASE_URL } = process.env;
 
