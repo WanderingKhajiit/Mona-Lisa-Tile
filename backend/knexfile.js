@@ -2,7 +2,8 @@
 const path = require("path")
 require("dotenv").config();
 const { 
-  DATABASE_URL = "postgres://dvhhnzyu:bGt-MnlE2z0XYYPApNnNUpLC0Eb9JE-o@queenie.db.elephantsql.com/dvhhnzyu"
+  DATABASE_URL = "postgres://dvhhnzyu:bGt-MnlE2z0XYYPApNnNUpLC0Eb9JE-o@queenie.db.elephantsql.com/dvhhnzyu",
+  DB_ENV
 } = process.env;
 
 
@@ -12,7 +13,7 @@ const {
 module.exports = {
 
   development: {
-    client: 'pg',
+    client: DB_ENV,
     connection: DATABASE_URL,
     migrations: {
       directory: path.join(__dirname, "src", "db", "migrations"),
