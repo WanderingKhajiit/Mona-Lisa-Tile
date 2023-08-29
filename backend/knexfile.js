@@ -5,7 +5,7 @@ const {
   DATABASE_URL = "postgres://dvhhnzyu:bGt-MnlE2z0XYYPApNnNUpLC0Eb9JE-o@queenie.db.elephantsql.com/dvhhnzyu",
   
 } = process.env;
-// console.log("postgresql")
+
 
 /**
  * @type { Object.<string, import("knex").Knex.Config> }
