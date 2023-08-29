@@ -12,7 +12,7 @@ const {
 module.exports = {
 
   development: {
-    client: 'postgresql',
+    client: 'pg',
     connection: DATABASE_URL,
     migrations: {
       directory: path.join(__dirname, "src", "db", "migrations"),
