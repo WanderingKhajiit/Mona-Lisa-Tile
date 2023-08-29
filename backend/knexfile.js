@@ -3,9 +3,9 @@ const path = require("path")
 require("dotenv").config();
 const { 
   DATABASE_URL = "postgres://dvhhnzyu:bGt-MnlE2z0XYYPApNnNUpLC0Eb9JE-o@queenie.db.elephantsql.com/dvhhnzyu",
-  DB_ENV
+  
 } = process.env;
-
+// console.log("postgresql")
 
 /**
  * @type { Object.<string, import("knex").Knex.Config> }
@@ -13,7 +13,7 @@ const {
 module.exports = {
 
   development: {
-    client: DB_ENV,
+    client: "postgresql",
     connection: DATABASE_URL,
     migrations: {
       directory: path.join(__dirname, "src", "db", "migrations"),
