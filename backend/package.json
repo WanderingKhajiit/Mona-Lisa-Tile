@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend package",
+  "main": "knexfile.js",
+  "scripts": {
+    "start:dev": "nodemon src/server.js ",
+    "start": "node src/server.js",
+    "start:backend": "npm --prefix ./backend start",
+    "start:frontend": "npm --prefix ./frontend start",
+    "install": "cd ./front-end && npm install"
+  },
+  "keywords": [
+    "knex"
+  ],
+  "author": "hunter perkins",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "knex": "^2.5.1",
+    "npm-run-all": "^4.1.5",
+    "puppeteer": "^21.0.2"
+  }
+}

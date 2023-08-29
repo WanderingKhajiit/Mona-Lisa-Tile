@@ -1,0 +1,123 @@
+header{
+    background-origin: border-box;
+    background-size: 88px;
+    background-repeat: repeat;
+    background-image: url(../public/Travertine.jpg);
+    
+}
+body{
+    margin-top: 0.1px;
+    margin-right: 0.1px;
+    margin-left: 0.1px;
+    background-image: url(../public/Travertine.jpg);
+}
+nav{
+    text-align: center;
+    
+}
+
+button{
+    transition-duration: 0.4s;
+    background-color: none;
+    border-radius: 8px;
+    color: darkslategray;
+    font-size: 18px;
+    border: none;
+    align-self: center;
+}
+
+button:hover{
+    background-color: darkslategray;
+    color: white;
+}
+
+.center {
+    display: block;
+    width: 450px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.centerI{
+    display: flex;
+    justify-content: center;
+}
+
+.flexCon{
+    display: flex;
+    
+}
+
+.imgChar{
+    color: darkslategray;
+    font-family: monospace;
+    text-align: center;
+}
+
+.links{
+    font-family: monospace;
+    color: rgb(6, 44, 57);
+    font-size: 25px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.links:hover{
+    color: black;
+}
+
+.list{
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 1px;
+}
+
+.list-child{
+    flex: 1;
+    order: initial;
+}
+
+.list-read{
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.listing{
+    font-family: monospace;
+    color: rgb(6, 44, 57);
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navAnchor{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-decoration: solid;
+    color: black;
+    font-size: 60px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.navAnchor:hover{
+    opacity: 0.5;
+}
+
+.navAnchor:visited{
+    color: darkslategrey;
+}
+
+.read-button{
+    align-items: center;
+}
+
+.titles{
+    font-family:  monospace;
+    color: darkslategray;
+}
