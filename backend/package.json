@@ -2,7 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "backend package",
-  "main": "knexfile.js",
+  "main": "server.js",
   "scripts": {
     "start:dev": "nodemon src/server.js ",
     "start": "node src/server.js",
