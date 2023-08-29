@@ -1,4 +1,4 @@
-const knex = require("../db/connection.js")
+const knex = require("../../connection.js")
 
 function list(){
     return knex("jobs")
