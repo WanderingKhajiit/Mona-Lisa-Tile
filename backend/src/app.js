@@ -16,7 +16,7 @@ app.use(bodyParser.json({limit: '50mb'}));
 app.use(bodyParser.urlencoded({ limit: "50mb", extended: true}));
 app.use(cors());
 app.options("*", cors({
-    origin: "https://tile-server-s3hc.onrender.com/",
+    origin: "https://mona-lisa-tile.onrender.com/",
     credentials: true,
 }));
 app.use(express.json());
