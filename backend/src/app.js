@@ -18,10 +18,7 @@ app.get('/*', function (req, res) {
 app.use(bodyParser.json({limit: '50mb'}));
 app.use(bodyParser.urlencoded({ limit: "50mb", extended: true}));
 app.use(cors());
-app.options("*", cors({
-    origin: "https://mona-lisa-tile.onrender.com/",
-    credentials: true,
-}));
+app.options("*");
 app.use(express.json());
 
 app.use("/jobs", jobsRouter)
