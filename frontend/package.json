@@ -15,9 +15,9 @@
     "react-scripts": "5.0.1"
   },
   "scripts": {
-    "start": "react-scripts rewired start",
-    "build": "react-scripts rewired build",
-    "test": "react-scripts rewired test",
+    "start": "react-scripts-rewired start",
+    "build": "react-scripts-rewired build",
+    "test": "react-scripts-rewired test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
