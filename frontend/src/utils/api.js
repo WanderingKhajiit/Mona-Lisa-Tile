@@ -2,11 +2,12 @@
  * Defines the base URL for the API.
  * The default values is overridden by the `API_BASE_URL` environment variable.
  */
-
+const path = require("path")
+require("dotenv").config({ path: path.join(__dirname, "..", "..", ".env") })
 
 const API_BASE_URL =
   process.env.REACT_APP_API_BASE_URL || "https://localhost:5002";
-
+// console.log(process.env.REACT_APP_API_BASE_URL)
 /**
  * Defines the default headers for these functions to work with `json-server`
  */
