@@ -2,7 +2,7 @@
  * Defines the base URL for the API.
  * The default values is overridden by the `API_BASE_URL` environment variable.
  */
-const path = require("path")
+const path = require("node:path")
 require("dotenv").config({ path: path.join(__dirname, "..", "..", ".env") })
 
 const API_BASE_URL =
