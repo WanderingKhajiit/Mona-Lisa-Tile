@@ -12,9 +12,9 @@ const jobsRouter = require("./router/router.router")
 
 const app = express();
 
-app.get('/*', function (req, res) {
-    res.sendFile(path.join(__dirname,'..','..', 'build', 'index.html'));
-  });
+/*app.get('/*', function (req, res) {
+    res.sendFile(path.join(__dirname,'..','..','frontend', 'build', 'index.html'));
+  });*/
 app.use(bodyParser.json({limit: '50mb'}));
 app.use(bodyParser.urlencoded({ limit: "50mb", extended: true}));
 app.use(cors());
